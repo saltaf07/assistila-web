@@ -1,0 +1,113 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    /* Assistila Digital Theme - Light Mode */
+    --background: 220 25% 98%; /* Very Light Cool Gray */
+    --foreground: 220 20% 15%; /* Dark Desaturated Blue/Charcoal */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 220 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+
+    --primary: 200 80% 55%; /* Vibrant Electric Blue */
+    --primary-foreground: 210 40% 98%; /* Light text on primary */
+
+    --secondary: 220 20% 94%; /* Light Cool Gray for secondary elements */
+    --secondary-foreground: 220 20% 25%;
+
+    --muted: 220 20% 94%;
+    --muted-foreground: 220 15% 45%; /* Softer, muted text */
+
+    --accent: 300 70% 60%; /* Bright Magenta */
+    --accent-foreground: 0 0% 100%; /* White text on accent for contrast */
+
+    --destructive: 0 70% 55%; /* Clear, vibrant red */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 20% 90%; /* Soft cool gray border */
+    --input: 220 20% 90%;
+    --ring: 200 80% 55%; /* Primary color for rings/focus */
+
+    --radius: 0.75rem; /* Slightly larger radius for a modern feel */
+
+    --chart-1: 200 70% 50%;
+    --chart-2: 300 65% 55%;
+    --chart-3: 170 60% 45%;
+    --chart-4: 40 75% 55%;
+    --chart-5: 230 50% 60%;
+    
+    --sidebar-background: 220 25% 97%;
+    --sidebar-foreground: 220 20% 15%;
+    --sidebar-primary: 200 80% 55%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 220 20% 92%;
+    --sidebar-accent-foreground: 220 20% 15%;
+    --sidebar-border: 220 20% 88%;
+    --sidebar-ring: 200 80% 55%;
+  }
+
+  .dark {
+    /* Assistila Digital Theme - Dark Mode */
+    --background: 220 20% 10%; /* Deep Dark Blue/Gray */
+    --foreground: 210 30% 92%; /* Light cool gray text */
+
+    --card: 220 20% 15%; /* Slightly lighter dark for cards */
+    --card-foreground: 210 30% 92%;
+
+    --popover: 220 20% 15%;
+    --popover-foreground: 210 30% 92%;
+
+    --primary: 200 75% 60%; /* Brighter Electric Blue */
+    --primary-foreground: 220 15% 10%; /* Dark text on primary */
+
+    --secondary: 220 15% 20%; /* Darker gray for secondary elements */
+    --secondary-foreground: 210 30% 90%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 210 25% 75%;
+
+    --accent: 300 75% 65%; /* Brighter Magenta */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 60%; /* Brighter red */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 200 75% 60%;
+    
+    --chart-1: 200 70% 55%;
+    --chart-2: 300 70% 60%;
+    --chart-3: 170 65% 50%;
+    --chart-4: 40 80% 60%;
+    --chart-5: 230 55% 65%;
+
+    --sidebar-background: 220 20% 12%;
+    --sidebar-foreground: 210 30% 92%;
+    --sidebar-primary: 200 75% 60%;
+    --sidebar-primary-foreground: 220 15% 10%;
+    --sidebar-accent: 220 15% 18%;
+    --sidebar-accent-foreground: 210 30% 92%;
+    --sidebar-border: 220 15% 22%;
+    --sidebar-ring: 200 75% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
